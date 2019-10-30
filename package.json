@@ -1,0 +1,11 @@
+{
+  "name": "@server-state/tablelike-table-cbm",
+  "version": "1.0.0",
+  "description": "A table visualization of the table-like standard DF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fliegwerk",
+  "license": "MIT"
+}
