@@ -1,6 +1,6 @@
 # tablelike-table-cbm
 
-A <abbr title="client-base module">CBM</abbr> for the [tablelike DF]() that provides a table visualization of said data structure.
+A <abbr title="client-base module">CBM</abbr> for the [tablelike DF](https://github.com/server-state/specs/blob/master/arch/data-formats.md#tabletable-like) that provides a table visualization of said data structure.
 
 It can get installed with
 
