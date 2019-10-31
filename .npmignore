@@ -1,0 +1,6 @@
+tests
+component/src
+.eslintrc.js
+.travis.yml
+.github
+.idea
