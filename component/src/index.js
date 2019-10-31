@@ -8,14 +8,14 @@ export default function Table(props) {
             <MTable>
                 <TableHead>
                     <TableRow>
-                        {props.data._fields.map(field => <TableCell>{field}</TableCell>)}
+                        {props.data._fields.map(field => <TableCell key={field}>{field}</TableCell>)}
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {props.data.rows.map(row => (
-                        <TableRow>
+                    {props.data.rows.map((row, index) => (
+                        <TableRow key={index}>
                             {props.data._fields.map(field => (
-                                <TableCell>{row[field]}</TableCell>
+                                <TableCell key={field}>{row[field]}</TableCell>
                             ))}
                         </TableRow>
                     ))}
@@ -28,7 +28,7 @@ export default function Table(props) {
 }
 
 Table.propTypes = {
-    data: PropTypes.objectOf({
+    data: PropTypes.shape({
         _fields: PropTypes.arrayOf(PropTypes.string).isRequired,
         rows: PropTypes.arrayOf(PropTypes.object).isRequired
     }).isRequired,
