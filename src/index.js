@@ -1,8 +1,8 @@
 import React from "react";
-import {Table as MTable, TableBody, TableCell, TableHead, TableRow, Typography} from "@material-ui/core";
+import { Table as MTable, TableBody, TableCell, TableHead, TableRow, Typography } from "@material-ui/core";
 import PropTypes from 'prop-types';
 
-export default function Table(props) {
+function Table(props) {
     if (props.data && props.data['_fields'] && props.data['rows'])
         return (
             <MTable>
@@ -35,3 +35,12 @@ Table.propTypes = {
     onRegisterAction: PropTypes.func,
     onRefresh: PropTypes.func
 };
+
+
+const info = {
+    name: '@server-state/tablelike-table-cbm',
+    about: 'A table visualization for the table-like standard DF',
+    version: '1.0.0',
+};
+
+export default { info, component: Table };

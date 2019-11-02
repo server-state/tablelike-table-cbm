@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest tests",
-    "build": "./node_modules/.bin/babel component/src --out-file component/index.js",
+    "build": "webpack --config webpack.config.js --mode production",
     "prepare": "npm run build && npm run test"
   },
   "author": "server-state",
@@ -19,21 +19,24 @@
   },
   "homepage": "https://github.com/server-state/tablelike-table-cbm#readme",
   "peerDependencies": {
-    "react": "^16.6.1",
     "@material-ui/core": "^4.5.2",
-    "react-dom": "^16.6.3",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
-    "@babel/preset-react": "^7.0.0",
-    "react": "^16.6.1",
+    "@babel/preset-react": "^7.6.3",
     "@material-ui/core": "^4.5.2",
-    "react-dom": "^16.6.3",
+    "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
+    "prop-types": "latest",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3",
     "react-test-renderer": "^16.11.0",
-    "prop-types": "latest"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
