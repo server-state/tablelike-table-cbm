@@ -3,7 +3,8 @@ module.exports = {
   output: {
     path: __dirname,
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
+    library: 'tablelike-table-cbm'
   },
   module: {
     rules: [
@@ -21,8 +22,11 @@ module.exports = {
     ]
   },
   externals: {
-    'react': 'react',
+    'react': 'commonjs react',
+    'react-dom': 'react-dom',
     'prop-types': 'prop-types',
-    '@material-ui/core': '@material-ui/core'
+    '@material-ui/core': '@material-ui/core',
+    '@material-ui/styles': '@material-ui/styles',
+    '@material-ui/icons': '@material-ui/icons'
   }
 };
