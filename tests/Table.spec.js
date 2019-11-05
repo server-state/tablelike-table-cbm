@@ -1,6 +1,6 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import CBM from "../src";
+import CBM from "..";
 
 describe("Table CBM", () => {
     test("Invalid data", () => {

@@ -1,0 +1,6 @@
+{
+	"env": {
+		"cypress-react-unit-test": {
+		}
+	}
+}
