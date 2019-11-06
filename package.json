@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest tests",
     "build": "webpack --config webpack.config.js --mode production",
-    "prepare": "npm run build && npm run test"
+    "prepare": "npm run build && npm run test",
+    "test:integration": "cypress run"
   },
   "author": "server-state",
   "license": "MIT",
@@ -35,6 +36,7 @@
     "babel-loader": "^8.0.6",
     "cypress": "^3.6.0",
     "cypress-react-unit-test": "^2.4.3",
+    "eslint-plugin-cypress": "^2.7.0",
     "jest": "^24.9.0",
     "prop-types": "latest",
     "react": "^16.6.1",

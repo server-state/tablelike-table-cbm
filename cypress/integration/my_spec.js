@@ -3,8 +3,6 @@ import React from 'react';
 import * as ReactDOM from 'react-dom';
 window.ReactDOM = ReactDOM;
 
-
-
 describe('first test', () => {
 	beforeEach(() => {
 		cy.viewport(600, 240)
