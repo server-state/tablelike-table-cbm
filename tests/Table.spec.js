@@ -1,11 +1,11 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import Table from "../component/src";
+import CBM from "..";
 
 describe("Table CBM", () => {
     test("Invalid data", () => {
         console.error = jest.fn();
-        const cbm = create(<Table />);
+        const cbm = create(<CBM.component />);
         expect(cbm).toMatchSnapshot();
         expect(console.error).toBeCalled();
     });
@@ -24,7 +24,7 @@ describe("Table CBM", () => {
                 }
             ]
         };
-        const cbm = create(<Table data={mockData} onRefresh={() => {}} onRegisterAction={() => {}}/>)
+        const cbm = create(<CBM.component data={mockData} onRefresh={() => {}} onRegisterAction={() => {}}/>)
         expect(cbm).toMatchSnapshot();
     })
 });
