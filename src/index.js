@@ -40,7 +40,7 @@ Table.propTypes = {
 const info = {
     name: '@server-state/tablelike-table-cbm',
     about: 'A table visualization for the table-like standard DF',
-    version: '1.0.0',
+    version: '0.1.2',
 };
 
 export default { info, component: Table };
