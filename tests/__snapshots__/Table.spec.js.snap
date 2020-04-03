@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table CBM Invalid data 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1"
+>
+  Invalid data type. Expected TableLike data to get passed to the visualization.
+</p>
+`;
+
+exports[`Table CBM Valid data 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        fielda
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        fieldb
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Hello world
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        1
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Test
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        2
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
