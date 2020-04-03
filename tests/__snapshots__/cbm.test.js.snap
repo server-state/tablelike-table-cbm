@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table CBM Invalid data 1`] = `
-<p
-  className="MuiTypography-root MuiTypography-body1"
->
-  Invalid data type. Expected TableLike data to get passed to the visualization.
-</p>
-`;
-
-exports[`Table CBM Valid data 1`] = `
+exports[`CBM specification tests should render without any complications 1`] = `
 <table
   className="MuiTable-root"
 >
@@ -23,14 +15,14 @@ exports[`Table CBM Valid data 1`] = `
         className="MuiTableCell-root MuiTableCell-head"
         scope="col"
       >
-        fielda
+        field-a
       </th>
       <th
         aria-sort={null}
         className="MuiTableCell-root MuiTableCell-head"
         scope="col"
       >
-        fieldb
+        field-b
       </th>
     </tr>
   </thead>
