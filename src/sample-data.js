@@ -73,6 +73,20 @@ const sampleData = [
         data: function() {
             console.log("Hehe");
         }
+    },
+    {
+        name: "Partial data set 1",
+        data: {
+            _fields: ['field-a', 'field-b'],
+            rows: [
+                {
+                    'field-b': 1
+                },
+                {
+                    'field-a': 'Test'
+                }
+            ]
+        }
     }
 ];
 
