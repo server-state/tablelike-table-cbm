@@ -2,12 +2,9 @@ language: node_js
 node_js:
   - 10
 
-cache:
-  npm: true
-  directories:
-    - ~/.cache
-
 script:
   - npm run build
   - npm run test
-  - npm run ci:integration
+
+notifications:
+  slack: serverstate:PcPgLd43m8TKiXrxfHb1mKff

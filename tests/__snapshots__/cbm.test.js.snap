@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CBM specification tests should render without any complications 1`] = `
+<table
+  className="MuiTable-root"
+>
+  <thead
+    className="MuiTableHead-root"
+  >
+    <tr
+      className="MuiTableRow-root MuiTableRow-head"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        field-a
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-head"
+        scope="col"
+      >
+        field-b
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root"
+  >
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Hello world
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        1
+      </td>
+    </tr>
+    <tr
+      className="MuiTableRow-root"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        Test
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root MuiTableCell-body"
+      >
+        2
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
