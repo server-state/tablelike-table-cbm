@@ -1,20 +1,8 @@
 # tablelike-table-cbm
 
-A <abbr title="client-base module">CBM</abbr> for the [tablelike DF](https://github.com/server-state/specs/blob/master/arch/data-formats.md#tabletable-like) that provides a table visualization of said data structure.
+A <abbr title="client-base module">CBM</abbr> for the [tablelike DF](https://server-state.github.io/types/modules/serverstate.dataformats.html#tabledata) that provides a table visualization of said data structure.
 
-It can get installed with
-
-```shell script
-yarn add @server-state/tablelike-table-cbm
+It can get installed via the official CBM registry under:
 ```
-
-and then registered in the *client-base*'s `component-registry.js` like this:
-
-```js
-import Table from '@server-state/tablelike-table-cbm'
-
-const components = {
-    [...],
-    table: Table
-}
+Settings -> Manage CBMs -> Get more ... -> Search for tablelike-table
 ```
