@@ -1,6 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@material-ui/core';
+import { Check, Clear } from '@material-ui/icons';
+
+function mapTo(element) {
+    switch (element) {
+        case true:
+            return <Check />;
+        case false:
+            return <Clear />;
+        default:
+            return element;
+    }
+}
 
 function TablelikeTableCBM(props) {
     if (props.data && props.data['_fields'] && props.data['rows'])
@@ -15,7 +27,7 @@ function TablelikeTableCBM(props) {
                     {props.data.rows.map((row, index) => (
                         <TableRow key={index}>
                             {props.data._fields.map(field => (
-                                <TableCell key={field}>{row[field]}</TableCell>
+                                <TableCell key={field}>{mapTo(row[field])}</TableCell>
                             ))}
                         </TableRow>
                     ))}
