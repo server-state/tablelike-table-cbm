@@ -11,12 +11,15 @@ exports[`Table CBM Invalid data 1`] = `
 exports[`Table CBM Valid data 1`] = `
 <table
   className="MuiTable-root"
+  role={null}
 >
   <thead
     className="MuiTableHead-root"
+    role={null}
   >
     <tr
       className="MuiTableRow-root MuiTableRow-head"
+      role={null}
     >
       <th
         aria-sort={null}
@@ -36,9 +39,11 @@ exports[`Table CBM Valid data 1`] = `
   </thead>
   <tbody
     className="MuiTableBody-root"
+    role={null}
   >
     <tr
       className="MuiTableRow-root"
+      role={null}
     >
       <td
         aria-sort={null}
@@ -55,6 +60,7 @@ exports[`Table CBM Valid data 1`] = `
     </tr>
     <tr
       className="MuiTableRow-root"
+      role={null}
     >
       <td
         aria-sort={null}
